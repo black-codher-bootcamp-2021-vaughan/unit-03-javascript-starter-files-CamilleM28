@@ -21,28 +21,29 @@ console.log(getGrade(67));
 function getGrade(total) {
   switch (true) {
     case total > 90:
-      return "A+";
+      result = "A+";
       break;
     case total > 80 && total <= 90:
-      return "A";
+      result = "A";
       break;
     case total > 70 && total <= 80:
-      return "B";
+      result = "B";
     case total > 60 && total <= 70:
-      return "C";
+      result = "C";
       break;
     case total > 50 && total <= 60:
-      return "D";
+      result = "D";
       break;
     case total > 40 && total <= 50:
-      return "E";
+      result = "E";
       break;
     case total > 30 && total <= 40:
-      return "F";
+      result = "F";
       break;
     default:
-      return "Fail";
+      result = "Fail";
   }
+  return result;
 }
 
 console.log(getGrade(20));
