@@ -35,10 +35,11 @@ function compare(a, b) {
   const personA = a.age;
   const personB = b.age;
 
-  return personA > personB ? true : false;
+  return personA > personB ? 1 : -1;
 }
 
 const inOrder = people.sort(compare).map((people) => people.name);
+console.log(inOrder);
 
 // function inOrder() {
 //   return people.sort(compare).map((people) => people.name);
