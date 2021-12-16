@@ -13,7 +13,7 @@ export default function createListOfFruits(fruits) {
 
   fruits
     .filter((fruit) => {
-      return fruit.length > 5;
+      return fruit.length < 6;
     })
     .map((fruit) => {
       const listItem = document.createElement("li");

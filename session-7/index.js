@@ -37,12 +37,22 @@ function compare(a, b) {
 
   return personA > personB ? 1 : -1;
 }
+function getName(person) {
+  return person.name;
+}
 
-const inOrder = people.sort(compare).map((people) => people.name);
+const inOrder = people.sort(compare).map(getName);
 console.log(inOrder);
 
+//code above is the same as cod below!
+
+// const inOrder = people.sort(compare).map((person) => person.name);
+// console.log(inOrder);
+
+//Alternative:
+
 // function inOrder() {
-//   return people.sort(compare).map((people) => people.name);
+//   return people.sort(compare).map((person) => person.name);
 // }
 
 // console.log(inOrder());
